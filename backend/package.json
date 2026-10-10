@@ -1,0 +1,27 @@
+{
+	"name": "backend",
+	"version": "1.0.0",
+	"description": "Secure Studio JWT authentication API",
+	"main": "dist/src/server.js",
+	"scripts": {
+		"build": "tsc",
+		"restart": "npm run build && node --env-file .env ./dist/src/server.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "module",
+	"dependencies": {
+		"bcrypt": "^6.0.0",
+		"express": "^5.2.1",
+		"jsonwebtoken": "^9.0.3",
+		"zod": "^4.6.5"
+	},
+	"devDependencies": {
+		"@types/bcrypt": "^6.0.0",
+		"@types/express": "^5.0.6",
+		"@types/jsonwebtoken": "^9.0.10",
+		"@types/node": "^26.6.5",
+		"typescript": "^7.0.2"
+	}
+}

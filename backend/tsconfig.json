@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		"rootDir": ".",
+		"outDir": "./dist",
+
+		"module": "nodenext",
+		"target": "esnext",
+		// enables Node.js types for things such as process.env and crypto.randomUUID()
+		"types": ["node"],
+
+		"sourceMap": true,
+		"declaration": true,
+		"declarationMap": true,
+
+		"noUncheckedIndexedAccess": true,
+		"exactOptionalPropertyTypes": true,
+
+		"strict": true,
+		"jsx": "react-jsx",
+		"verbatimModuleSyntax": true,
+		"isolatedModules": true,
+		"noUncheckedSideEffectImports": true,
+		"moduleDetection": "force",
+		"skipLibCheck": true,
+		"rewriteRelativeImportExtensions": true
+	},
+	"include": ["src"]
+}
