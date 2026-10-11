@@ -78,7 +78,12 @@ export function deleteUser(id: string): boolean {
     return true
 }
 
-// Return all usernames, never the passwords
+// Return all usernames 
 export function getAllUsernames(): string[] {
     return users.map(user => user.username)
+}
+
+// Find a user by ID
+export function getUserById(id: string): User | undefined {
+    return users.find(user => user.id === id)
 }
